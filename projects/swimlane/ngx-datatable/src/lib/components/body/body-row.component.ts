@@ -193,7 +193,7 @@ export class DataTableBodyRowComponent implements DoCheck {
       const bodyWidth = parseInt(this.innerWidth + '', 0);
       const totalDiff = widths.total - bodyWidth;
       const offsetDiff = totalDiff - offsetX;
-      const offset = (offsetDiff + this.scrollbarHelper.width) * -1;
+      const offset = ((offsetDiff + this.scrollbarHelper.width) * -1) +17;
       translateXY(styles, offset, 0);
     }
 
